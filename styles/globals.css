@@ -40,6 +40,10 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -75,8 +79,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 2;
+  margin: 2;
 }
 
 html,
@@ -86,13 +90,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: grey;
 }
 
 a {
@@ -105,3 +103,42 @@ a {
     color-scheme: dark;
   }
 }
+.content{
+  width: 600px; 
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: black;
+}
+
+input , button{
+  margin: 5px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10 px;
+}
+
+.result{
+  color: orange;
+}
+
+.headings{
+  color: orange;
+}
+h3{
+  color: white;
+}
+.name{
+  top: 0;
+  color: white;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
