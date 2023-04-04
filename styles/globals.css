@@ -40,9 +40,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -139,6 +136,6 @@ h3{
   color: white;
 }
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
