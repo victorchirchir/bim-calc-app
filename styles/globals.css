@@ -135,6 +135,9 @@ h3{
   top: 0;
   color: white;
 }
+button{
+  background-color: orange;
+}
 
 /* @tailwind base;
 @tailwind components;
